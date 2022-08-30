@@ -145,8 +145,8 @@ class TfliteFlutterHelperPlugin : FlutterPlugin,
 		when (requestCode) {
 			AUDIO_RECORD_PERMISSION_CODE -> {
 				
-				permissionToRecordAudio = grantResults.isNotEmpty() &&
-						grantResults[0] == PackageManager.PERMISSION_GRANTED
+					permissionToRecordAudio = grantResults.isNotEmpty() &&
+							grantResults[0] == PackageManager.PERMISSION_GRANTED
 
 				completeInitializeRecorder()
 				return true
